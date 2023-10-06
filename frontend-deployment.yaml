@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chat-frontend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chat-frontend
+  template:
+    metadata:
+      labels:
+        app: chat-frontend
+    spec:
+      containers:
+        - name: chat-frontend
+          image: chat-frontend:latest
+          ports:
+            - containerPort: 4000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chat-frontend-service
+spec:
+  selector:
+    app: chat-frontend
+  ports:
+    - protocol: TCP
+      port: 4000
+      targetPort: 4000
