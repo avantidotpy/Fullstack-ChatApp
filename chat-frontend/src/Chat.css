@@ -1,0 +1,58 @@
+.chat-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .message p {
+    margin-right: 10px;
+  }
+  
+  .message-stats {
+    display: flex;
+    align-items: center;
+  }
+  
+  .vote-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .vote-button {
+    margin-right: 5px;
+  }
+  
+  .vote-count {
+    font-weight: bold;
+  }
+  
+  .message-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .message-input input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .logout-button {
+    margin-top: 10px;
+  }
+  
